@@ -1,6 +1,8 @@
-letra = input("Digite um caractere: ").lower()
+letra = input("Digite um caractere: ")
 
-if letra.isalpha() and letra not in 'aeiou':
-    print("O caractere digitado é uma consoante.")
+vogais = ['a', 'e', 'i', 'o', 'u']
+
+if letra in vogais:
+    print("O caractere digitado é uma vogal.")
 else:
-    print("O caractere digitado não é uma consoante ou não é uma letra.")
+    print("O caractere digitado é uma consoante.")
